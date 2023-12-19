@@ -21,7 +21,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          React is fun
         </a>
       </header>
     </div>
@@ -29,4 +29,3 @@ function App() {
 }
 
 export default App;
-``

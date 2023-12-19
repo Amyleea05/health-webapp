@@ -2,11 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  
+
   //API FETCHING SECTION
   // fetch('https://randomuser.me/api/?results=10')
   // .then(response => response.json())
-  // .then(data => console.log(data));
+  // .then(data => console.log(data))
 
   return (
     <div className="App">
@@ -29,3 +29,4 @@ function App() {
 }
 
 export default App;
+``

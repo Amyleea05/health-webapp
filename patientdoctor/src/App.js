@@ -4,17 +4,9 @@ import { doctors } from './utils/data';
 function App() {
   console.log(doctors);
 
-  
-
   return (
     <div className="app-container">
-      {doctors.map(doctor => 
-        <div>
-          <h1>{doctor.name}</h1>
-          <h1>{doctor.specialty}</h1>
-          <img src={doctor.url} alt={doctor.name}/>
-        </div>
-      )}
+      <h1>Doctor Website</h1>
     </div>
   );
 }

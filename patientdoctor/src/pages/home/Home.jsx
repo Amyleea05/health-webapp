@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../../components/hero/Hero';
 import "./home.scss";
 
 function Home() {
   return (
-    <div>Homepage</div>
+    <div>
+        <Hero/>
+    </div>
   )
 }
 

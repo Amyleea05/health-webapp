@@ -1,6 +1,6 @@
 
 import React from 'react'
-import "./apointments.scss";
+import "./appointments.scss";
 
 function Apointments() {
   return (

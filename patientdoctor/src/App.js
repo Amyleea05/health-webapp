@@ -1,4 +1,3 @@
-import './App.css';
 import { doctors } from './utils/data';
 
 function App() {
@@ -6,7 +5,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Doctor Website</h1>
+      <h1>Doctor Appointment Website</h1>
     </div>
   );
 }

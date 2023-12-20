@@ -131,5 +131,25 @@ export const doctors = [
       },
       // Continue with unique entries for the remaining doctors...
     ];
+
+export const statistics = [
+    {
+        title: "Patients treated",
+        quantity: 3500,
+    },
+    {
+        title: "Available Specialists",
+        quantity: 45,
+    },
+    {
+        title: "Years in Market",
+        quantity: 13,
+    },
+    {
+        title: "Prizes awarded",
+        quantity: 27,
+    },
+
+];
     
   

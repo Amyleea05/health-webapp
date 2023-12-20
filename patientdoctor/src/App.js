@@ -1,29 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { doctors } from './utils/data';
 
 function App() {
+  console.log(doctors);
 
-  //API FETCHING SECTION
-  // fetch('https://randomuser.me/api/?results=10')
-  // .then(response => response.json())
-  // .then(data => console.log(data))
+  
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React hello
-        </a>
-      </header>
+    <div className="app-container">
+      {doctors.map(doctor => 
+        <div>
+          <h1>{doctor.name}</h1>
+          <h1>{doctor.specialty}</h1>
+          <img src={doctor.url} alt={doctor.name}/>
+        </div>
+      )}
     </div>
   );
 }

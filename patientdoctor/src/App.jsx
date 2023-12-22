@@ -1,9 +1,9 @@
-import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Outlet, Route, Routes, useLocation,} from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 
 import About from './pages/about/About';
 import Appointments from './pages/appointments/Appointments';
-import Doctors from './pages/doctors/Doctos';
+import Doctors from './pages/doctors/Doctors';
 import Home from './pages/home/Home';
 import { doctors } from './utils/data';
 import "./styles/global.scss";
@@ -11,9 +11,12 @@ import Footer from './components/footer/Footer';
 
 
 function Layout() {
+
+  const location = useLocation();
+  const hideNavbarOnAbout = location.pathname === '/about';
   return (
     <div className="app">
-      <Navbar />
+      {!hideNavbarOnAbout && <Navbar />}
       <Outlet />
       <Footer />
     </div>

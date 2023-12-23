@@ -41,7 +41,11 @@ function WhyUs({ backgroundColor }) {
                         that require immediate attention Emergency care available 
                         for all patients with critical medical conditions.
                     </p>
-                    <CtaButton to="/appointmemt">Make an appointment</CtaButton>
+                    <CtaButton
+                        element="/appointment"
+                    >
+                        Make an Appointment
+                    </CtaButton>
                 </div>
             </div>
         </div>
